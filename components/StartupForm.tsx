@@ -14,7 +14,7 @@ const StartupForm = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [pitch, setPitch] = useState('**Hello world!!!**');
   const router = useRouter();
-  const handleFormSubmit = async (prevState:any,formData:FormData) => 
+  const handleFormSubmit = async (prevState: { error: string, status: string }, formData: FormData) => 
     {
      try{
         const formValues = {
@@ -25,7 +25,7 @@ const StartupForm = () => {
           pitch,
          }
          await formSchema.parseAsync(formValues);
-         const result = await createPitch(prevState,formData, pitch);
+         const result = await createPitch(formData, pitch);
           if(result.status === 'SUCCESS'){
           toast.success("Success",{
             description: 'Your Startup pitch has been created successfully',
@@ -48,7 +48,7 @@ const StartupForm = () => {
      });
      return {...prevState, error: 'An unexpected error has occurred', status: 'ERROR'};
     }}
-  const [state, formAction, isPending] = useActionState(handleFormSubmit,{error:'',status:'INITIAL'});
+  const [, formAction, isPending] = useActionState(handleFormSubmit,{error:'',status:'INITIAL'});
   return (
     <form action={formAction} className='startup-form'>
       <div>
