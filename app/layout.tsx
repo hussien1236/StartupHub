@@ -7,47 +7,47 @@ import { Toaster } from "@/components/ui/sonner";
 const workSans = localFont({
   src:[
     {
-      path: './Fonts/WorkSans-Black.ttf',
+      path: './fonts/WorkSans-Black.ttf',
       weight: '900',
       style: 'normal'
     },
     {
-      path: './Fonts/WorkSans-ExtraBold.ttf',
+      path: './fonts/WorkSans-ExtraBold.ttf',
       weight: '800',
       style: 'normal'
     },
     {
-      path: './Fonts/WorkSans-Bold.ttf',
+      path: './fonts/WorkSans-Bold.ttf',
       weight: '700',
       style: 'normal'
     },
     {
-      path: './Fonts/WorkSans-SemiBold.ttf',
+      path: './fonts/WorkSans-SemiBold.ttf',
       weight: '600',
       style: 'normal'
     },
     {
-      path: './Fonts/WorkSans-Medium.ttf',
+      path: './fonts/WorkSans-Medium.ttf',
       weight: '500',
       style: 'normal'
     },
     {
-      path: './Fonts/WorkSans-Regular.ttf',
+      path: './fonts/WorkSans-Regular.ttf',
       weight: '400',
       style: 'normal'
     },
     {
-      path: './Fonts/WorkSans-Light.ttf',
+      path: './fonts/WorkSans-Light.ttf',
       weight: '300',
       style: 'normal'
     },
     {
-      path: './Fonts/WorkSans-Thin.ttf',
+      path: './fonts/WorkSans-Thin.ttf',
       weight: '200',
       style: 'normal'
     },
     {
-      path: './Fonts/WorkSans-ExtraLight.ttf',
+      path: './fonts/WorkSans-ExtraLight.ttf',
       weight: '100',
       style: 'normal'
     }
